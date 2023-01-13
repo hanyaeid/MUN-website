@@ -8,38 +8,85 @@
                 transform:scale(0.1);
                 opacity:0;
             }
-            60%{
-                transform:scale(1.2);
+            50%{
+                transform:scale(1);
                 opacity:1
             }
             100%{
-                transform:scale(1);
+                transform:scale(1.7);
             }
         }
+
+       
+        @keyframes slideUp{
+            0%{
+                transform:translateY(900px);
+                opacity:0;
+            }
+            100%{
+                transform:translateY(auto);
+            }
+        }
+
+        @keyframes slideIn{
+            0%{
+                transform:translateX(-900px);
+                opacity:0;
+            }
+            30%{
+                opacity:0;
+            }
+            100%{
+                transform:translateX(auto);
+                opacity:1;
+            }
+        }
+
+        @keyframes typed{
+            from{
+                width:0;
+            }
+            to{
+                width:100%;
+            }
+        }
+
         body{
-            background-image: url('https://pbs.twimg.com/media/FSa-etNVkAEriet.jpg');
-            background-size: 40%;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0625c2f9-8190-4016-888a-b5e900cebd89/d8j1kmk-5adf5c77-40df-4301-99ed-93e5c2ab4e49.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA2MjVjMmY5LTgxOTAtNDAxNi04ODhhLWI1ZTkwMGNlYmQ4OVwvZDhqMWttay01YWRmNWM3Ny00MGRmLTQzMDEtOTllZC05M2U1YzJhYjRlNDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZuPCvbpaUaztbdErdCB0Tt7C2Yhv5R8dbZheQtamt_c');
+            background-size: cover;
             justify-content:center;
             align-items:center;
         }
 
         .square{
             border:5px;
-            background-color:blue;
-            text-align:center;
+            background-color:rgb(162, 179, 224);
+            text-align:left;
             margin:auto;
-
+            animation:slideUp 2s;
             width:600px;
             height:600px;
-            box-shadow:2px 2px 20px 23px #7fecad;
+            box-shadow:2px 2px 20px 23px #d19beb;
+            margin-top:50px;
         }
 
         .greeting{
-            animation:bounce 2s;
-            animation-iteration-count: infinite;
+            animation:slideIn 3s;
             text-align:center;
-            
+            color:white;
         }
+
+        .intro{
+            animation:typed 5s;
+            animation-delay: 3s;
+            overflow: hidden;
+            white-space: nowrap;
+            width:0;
+            animation-timing-function: steps(30,end);
+            animation-fill-mode: forwards;
+        }
+
+        
 
 
     </style>
@@ -52,7 +99,13 @@
     </div>
 
     <div class="square">
-        <h2>Hi there</h2>
+        <div class="intro">
+            <h2>My name is <span class="name">Hanya Eid</span> :)</h2>
+        </div>
+
+        <div class="about">
+            <p>I am a Computer Science student at MUN. I was previously a Mechanical Engineering student, but it wasn't as fun as this</p>
+        </div>
     </div>
 
 
