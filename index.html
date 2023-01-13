@@ -2,10 +2,21 @@
 <head>
 
     <style>
+
+        @keyframes bounce{
+            0%{
+                transform:scale(0.1);
+                opacity:0;
+            }
+            60%{
+                transform:scale(1.2);
+                opacity:1
+            }
+            100%{
+                transform:scale(1);
+            }
+        }
         body{
-            display:flex;
-            margin:0 auto;
-            height:100avh;
             background-image: url('https://pbs.twimg.com/media/FSa-etNVkAEriet.jpg');
             background-size: 40%;
             justify-content:center;
@@ -14,20 +25,34 @@
 
         .square{
             border:5px;
-            background-color:white;
+            background-color:blue;
             text-align:center;
+            margin:auto;
+
             width:600px;
             height:600px;
             box-shadow:2px 2px 20px 23px #7fecad;
         }
 
+        .greeting{
+            animation:bounce 2s;
+            animation-iteration-count: infinite;
+            text-align:center;
+            
+        }
 
-</style>
+
+    </style>
 </head>
 
 <body>
-<div class="square">
-<h1>Hi there</h1>
-</div>
+
+    <div class="greeting">
+        <h1>Hello there!</h1>
+    </div>
+
+    <div class="square">
+        <h2>Hi there</h2>
+    </div>
 
 
