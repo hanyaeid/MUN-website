@@ -86,7 +86,29 @@
             animation-fill-mode: forwards;
         }
 
-        
+        @keyframes fade{
+            0%{
+                opacity:0;
+            }
+            85%{
+                opacity:0;
+            }
+            100%{
+                opacity:1
+            }
+        }
+
+        .about{
+            animation:fade 7s;
+        }
+
+        .projects{
+            animation:fade 9s;
+        }
+
+        .interests{
+            animation:slideIn 10s;
+        }
 
 
     </style>
@@ -99,13 +121,27 @@
     </div>
 
     <div class="square">
+
         <div class="intro">
-            <h2>My name is <span class="name">Hanya Eid</span> :)</h2>
+            <h2>My name is Hanya Eid :)</h2>
         </div>
 
         <div class="about">
             <p>I am a Computer Science student at MUN. I was previously a Mechanical Engineering student, but it wasn't as fun as this</p>
         </div>
+
+        <div class="projects">
+            <p>Some of my interests include:</p>
+        </div>
+
+        <div class="interests">
+            <ul>
+                <li>3D printing</li>
+                <li>Web Development (mostly Frontend)</li>
+                <li>Databases and SQL</li>
+            </ul>
+        </div>
+               
     </div>
 
 
