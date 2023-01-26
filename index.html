@@ -56,6 +56,8 @@
             background-size: cover;
             justify-content:center;
             align-items:center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 1.6;
         }
 
         .square{
@@ -114,13 +116,22 @@
         }
 
         .connect{
-            animation:fade 13s;
+            animation:fade 15s;
+            display:flex;
+            text-align:center;
+            padding:10px;
         }
 
-        .Github{
-            float:right;
+        .icon{
+            flex: 33.33%;
+            padding:5px;
         }
 
+        p2{
+            animation: fade 13s;
+        }
+
+        
 
     </style>
 </head>
@@ -138,7 +149,7 @@
         </div>
 
         <div class="about">
-            <p>I am a <a href="https://www.mun.ca/computerscience/">Computer Science</a> student at MUN. I was previously a Mechanical Engineering student, and switched over in May 2022</p>
+            <p>I am a <a href="https://www.mun.ca/computerscience/">Computer Science</a> student at MUN! I was previously a Mechanical Engineering student, and switched over in May 2022 to pursue CS.</p>
         </div>
 
         <div class="projects">
@@ -153,17 +164,28 @@
             </ul>
         </div>
 
-        <div class="connect">
-            <p>Wanna connect? You can find me here:</p>
 
-            <div class="github">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="40px" height="40px">
-                <a href="https://github.com/hanyaeid">Github</a>
+        <p2>Wanna connect? You can find me here:</p2>
+
+        <div class="connect">
+
+            <div class="icon">
+                <a href="https://github.com/hanyaeid" target="blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="50px" height="50px">
+                </a>
+
             </div>
 
-            <div class="email">
-                <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" width="50px" height="50px">
-                <p>heid@mun.ca</p>
+            <div class="icon">
+                <a href="mailto:heid@mun.ca">
+                    <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" width="50px" height="50px">
+                </a>
+            </div>
+
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/hanya-eid-6b061b178/" target="blank">
+                    <img src="http://cdn.onlinewebfonts.com/svg/img_24873.png" width="50px" height="50px">
+                </a>
             </div>
         </div>
 
